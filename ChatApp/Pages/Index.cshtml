@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+<script src="~/js/chat.js"></script>
+
+<input id="message" placeholder="Message" />
+<button onclick="sendMessage()">Send</button>
+
+<div id="messages"></div>
